@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyWise AI - Result</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+    <div class="result-page">
+
+        <div class="result-container">
+
+            <!-- Back to Home -->
+
+            <a href="/" class="back-link">
+                ← StudyWise AI
+            </a>
+
+
+            <!-- Heading -->
+
+            <div class="result-header">
+
+                <p class="result-label">
+                    AI PERFORMANCE ANALYSIS
+                </p>
+
+                <h1>
+                    Your Performance Result
+                </h1>
+
+                <p>
+                    Based on the academic information you provided,
+                    StudyWise AI has generated the following prediction.
+                </p>
+
+            </div>
+
+
+            <!-- Score Card -->
+
+            <div class="score-card">
+
+                <p class="score-title">
+                    Predicted Writing Score
+                </p>
+
+                <div class="score">
+                    {{ prediction }}
+                </div>
+
+                <p class="score-out-of">
+                    out of 100
+                </p>
+
+            </div>
+
+
+            <!-- Performance Message -->
+
+            <div class="insight-card">
+
+                <h2>
+                    Performance Insight
+                </h2>
+
+                {% if prediction >= 80 %}
+
+                    <p>
+                        Excellent performance! Your predicted score
+                        indicates a strong academic performance.
+                        Keep maintaining your consistency and continue
+                        strengthening your skills.
+                    </p>
+
+                {% elif prediction >= 60 %}
+
+                    <p>
+                        Good performance! You have a solid academic
+                        foundation. With consistent practice and
+                        focused preparation, you can improve further.
+                    </p>
+
+                {% elif prediction >= 40 %}
+
+                    <p>
+                        Your performance has room for improvement.
+                        Focus on strengthening your understanding
+                        of key concepts and practice regularly.
+                    </p>
+
+                {% else %}
+
+                    <p>
+                        Your predicted score suggests that additional
+                        academic support and consistent practice may
+                        be helpful. Start with the fundamentals and
+                        gradually build your skills.
+                    </p>
+
+                {% endif %}
+
+            </div>
+
+
+            <!-- Action -->
+
+            <a href="/predict" class="analyze-again">
+                Analyze Another Student →
+            </a>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

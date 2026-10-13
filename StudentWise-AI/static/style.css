@@ -1,0 +1,650 @@
+/* =========================================================
+   STUDYWISE AI
+   COMPLETE STYLESHEET
+   Pages:
+   1. Home Page
+   2. Prediction Form
+   3. Result Page
+========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL STYLES
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: #f5f7ff;
+    color: #1f2937;
+}
+
+
+/* =========================================================
+   2. HOME PAGE
+========================================================= */
+
+
+/* Main hero section */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #eef2ff,
+        #f8faff
+    );
+}
+
+
+/* Main content */
+
+.hero-content {
+    max-width: 850px;
+
+    text-align: center;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 24px;
+
+    font-weight: 700;
+
+    margin-bottom: 55px;
+
+    color: #1f2937;
+}
+
+.logo span {
+    color: #6366f1;
+}
+
+
+/* Main heading */
+
+.hero h1 {
+    font-size: 58px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+.hero h1 span {
+    display: block;
+
+    color: #6366f1;
+}
+
+
+/* Description */
+
+.hero p {
+    max-width: 650px;
+
+    margin: 0 auto 40px;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    color: #6b7280;
+}
+
+
+/* Home button */
+
+.start-button {
+    display: inline-block;
+
+    padding: 16px 30px;
+
+    background: #6366f1;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.start-button:hover {
+    background: #4f46e5;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   3. PREDICTION FORM PAGE
+========================================================= */
+
+
+/* Main page */
+
+.form-page {
+    min-height: 100vh;
+
+    padding: 40px 20px 70px;
+
+    background: linear-gradient(
+        135deg,
+        #eef2ff,
+        #f8faff
+    );
+}
+
+
+/* Header */
+
+.form-header {
+    max-width: 850px;
+
+    margin: 0 auto 35px;
+}
+
+
+/* Back link */
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 30px;
+
+    color: #6366f1;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+.back-link:hover {
+    color: #4f46e5;
+}
+
+
+/* Page heading */
+
+.form-header h1 {
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+
+    color: #111827;
+}
+
+
+/* Header description */
+
+.form-header p {
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.form-card {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(31, 41, 55, 0.08);
+}
+
+
+/* =========================================================
+   SECTION TITLES
+========================================================= */
+
+.section-title {
+    margin-bottom: 25px;
+}
+
+.section-title:not(:first-child) {
+    margin-top: 40px;
+}
+
+.section-title h2 {
+    font-size: 22px;
+
+    margin-bottom: 7px;
+
+    color: #111827;
+}
+
+.section-title p {
+    font-size: 14px;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   FORM GROUPS
+========================================================= */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+
+/* Labels */
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+
+/* Inputs and Selects */
+
+.form-group select,
+.form-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    font-size: 15px;
+
+    color: #374151;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+/* Input focus */
+
+.form-group select:focus,
+.form-group input:focus {
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(99, 102, 241, 0.12);
+}
+
+
+/* =========================================================
+   ANALYZE BUTTON
+========================================================= */
+
+.analyze-button {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #6366f1;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.analyze-button:hover {
+    background: #4f46e5;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   4. RESULT PAGE
+========================================================= */
+
+
+/* Main result page */
+
+.result-page {
+    min-height: 100vh;
+
+    padding: 50px 20px 70px;
+
+    background: linear-gradient(
+        135deg,
+        #eef2ff,
+        #f8faff
+    );
+}
+
+
+/* Result container */
+
+.result-container {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   RESULT HEADER
+========================================================= */
+
+.result-header {
+    margin-top: 25px;
+
+    margin-bottom: 35px;
+}
+
+
+/* Small label */
+
+.result-label {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #6366f1;
+
+    margin-bottom: 10px;
+}
+
+
+/* Main result heading */
+
+.result-header h1 {
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+
+    color: #111827;
+}
+
+
+/* Result description */
+
+.result-header > p:last-child {
+    max-width: 700px;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   SCORE CARD
+========================================================= */
+
+.score-card {
+    text-align: center;
+
+    padding: 45px 30px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(31, 41, 55, 0.08);
+
+    margin-bottom: 25px;
+}
+
+
+/* Score title */
+
+.score-title {
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #6b7280;
+
+    margin-bottom: 15px;
+}
+
+
+/* Actual score */
+
+.score {
+    font-size: 72px;
+
+    font-weight: 700;
+
+    color: #6366f1;
+
+    line-height: 1;
+}
+
+
+/* Out of 100 */
+
+.score-out-of {
+    margin-top: 10px;
+
+    font-size: 15px;
+
+    color: #9ca3af;
+}
+
+
+/* =========================================================
+   PERFORMANCE INSIGHT
+========================================================= */
+
+.insight-card {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(31, 41, 55, 0.08);
+
+    margin-bottom: 30px;
+}
+
+
+/* Insight heading */
+
+.insight-card h2 {
+    font-size: 21px;
+
+    color: #111827;
+
+    margin-bottom: 12px;
+}
+
+
+/* Insight text */
+
+.insight-card p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   ANALYZE AGAIN BUTTON
+========================================================= */
+
+.analyze-again {
+    display: block;
+
+    width: fit-content;
+
+    margin: 0 auto;
+
+    padding: 15px 25px;
+
+    background: #6366f1;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.analyze-again:hover {
+    background: #4f46e5;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   5. MOBILE RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 700px) {
+
+
+    /* -------------------------
+       Home Page
+    ------------------------- */
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .logo {
+        margin-bottom: 40px;
+    }
+
+
+    /* -------------------------
+       Prediction Page
+    ------------------------- */
+
+    .form-page {
+        padding: 25px 15px 50px;
+    }
+
+    .form-card {
+        padding: 25px;
+    }
+
+    .form-header h1 {
+        font-size: 32px;
+    }
+
+    .form-header p {
+        font-size: 15px;
+    }
+
+
+    /* -------------------------
+       Result Page
+    ------------------------- */
+
+    .result-page {
+        padding: 30px 15px 50px;
+    }
+
+    .result-header h1 {
+        font-size: 32px;
+    }
+
+    .result-header > p:last-child {
+        font-size: 15px;
+    }
+
+    .score {
+        font-size: 58px;
+    }
+
+    .score-card,
+    .insight-card {
+        padding: 30px 20px;
+    }
+
+}
